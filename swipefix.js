@@ -1,4 +1,4 @@
-$.extend($.event.special.swipe, {
+$.event.special.swipe = $.extend($.event.special.swipe, {
 	start: function( event ) {
  		var data = event.originalEvent.touches ?
 			event.originalEvent.touches[ 0 ] : event;
