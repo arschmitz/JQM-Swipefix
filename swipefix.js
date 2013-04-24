@@ -29,7 +29,7 @@ $.event.special.swipe = $.extend($.event.special.swipe, {
 		if ( time < swipe.durationThreshold && x > swipe.horizontalDistanceThreshold && ( y  + offset )
 				< swipe.verticalDistanceThreshold ) {
 
-			start.origin.trigger( "swipe" ).trigger( x ? "swipeleft" : "swiperight" );
+			start.origin.trigger( "swipe" ).trigger( ( start.coords[ 0 ] - stop.coords[ 0 ] ) ? "swipeleft" : "swiperight" );
 		}
 	}
 });
