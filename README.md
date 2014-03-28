@@ -1,3 +1,5 @@
+# This project is officially discontinued as the issue is fixed in jquery mobile 1.4 so this is no longer needed
+
 JQM-Swipefix
 ============
 
